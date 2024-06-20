@@ -1,0 +1,26 @@
+<html> 
+<head> 
+<title>array</title> 
+
+<script language="JavaScript"> 
+function Arrays(){
+school=new Array(" Алгебра", " Геометрия", " Физика", " Химия", " Биология", " Информатика", " География", " Литература", " Русский язык", " История", " Иностранный язык", " Обществознание"); 
+
+humanities=new Array(); 
+humanities=school.slice(0, 6);//помещаем в массив переменные начиная с 0 индекса, заканчивая 6
+document.write("Гуманитарные науки: " + humanities + "<br>");//"<br>" перенос строки
+
+sciences=new Array();
+sciences=school.slice(7);//помещаем в массив все элементы начиная с 7 индекса
+document.write("Точные науки: " +sciences); 
+}
+</script> 
+</head> 
+
+<body> 
+<script>
+Arrays();
+</script>
+
+</body> 
+</html> 
